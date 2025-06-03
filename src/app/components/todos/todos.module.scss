@@ -1,0 +1,37 @@
+.todos_container {
+    display: grid;
+    grid-template-rows: 100px 1fr 100px;
+    margin: 0;
+    position: absolute;             
+    top: 50%;  
+    left: 50%;                      
+    transform: translate(-50%, -50%);
+    width: 650px;
+    height: 90vh;
+    background-color: var(--light-primary);
+    border-radius: 1rem;
+    padding: 5rem 4rem;
+}
+
+.loader_wrapper {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+
+  .loader {
+      animation: spin 1s linear infinite;
+      color: var(--primary);
+      width: 100px;
+      height: 100px;
+      line-height: 38px;
+    }
+    
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+  }
+}
